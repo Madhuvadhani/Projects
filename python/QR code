@@ -1,0 +1,6 @@
+import pyqrcode
+url="https://www.indiabix.com/aptitude/questions-and-answers/"
+
+# Generate QR code
+s=pyqrcode.create(url)
+s.svg('qrcoded.svg',scale=8)
